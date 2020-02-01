@@ -1,0 +1,3071 @@
+Started GET "/" for ::1 at 2020-02-01 12:05:14 +0530
+  
+Mysql2::Error (Authentication plugin 'caching_sha2_password' cannot be loaded: The specified module could not be found.
+):
+  
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:90:in `connect'
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:90:in `initialize'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `mysql2_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:889:in `new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:912:in `try_to_checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:873:in `acquire_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:595:in `checkout'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:439:in `connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1121:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:238:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:206:in `connection'
+activerecord (6.0.2.1) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (12.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (97.0ms)[0m  [1m[35mCREATE DATABASE `media_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (77.9ms)[0m  [1m[35mCREATE DATABASE `media_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+Started GET "/" for ::1 at 2020-02-01 12:19:53 +0530
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.2.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.2.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (825.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (341.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (20.4ms)[0m  [1m[34mSELECT GET_LOCK('1920439836080715285', 0)[0m
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateChannels (20200201064934)
+  [1m[35m (380.8ms)[0m  [1m[35mCREATE TABLE `channels` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (40.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200201064934')[0m
+  [1m[35m (39.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateShows (20200201064956)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('1920439836080715285')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT GET_LOCK('1920439836080715285', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateShows (20200201064956)
+  [1m[35m (364.5ms)[0m  [1m[35mCREATE TABLE `shows` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `channel_id` bigint NOT NULL, `name` varchar(255), `start_time` datetime, `end_time` datetime, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL,  INDEX `index_shows_on_channel_id`  (`channel_id`))[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (3.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200201064956')[0m
+  [1m[35m (64.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (19.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (33.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-02-01 06:56:40.173662', '2020-02-01 06:56:40.173662')[0m
+  [1m[35m (188.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('1920439836080715285')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Create (8.4ms)[0m  [1m[32mINSERT INTO `channels` (`name`, `created_at`, `updated_at`) VALUES ('Telugu', '2020-02-01 06:59:11.029510', '2020-02-01 06:59:11.029510')[0m
+  [1m[35m (42.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Create (36.9ms)[0m  [1m[32mINSERT INTO `channels` (`name`, `created_at`, `updated_at`) VALUES ('Hindi', '2020-02-01 06:59:11.092518', '2020-02-01 06:59:11.092518')[0m
+  [1m[35m (78.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Create (13.1ms)[0m  [1m[32mINSERT INTO `channels` (`name`, `created_at`, `updated_at`) VALUES ('Tamil', '2020-02-01 06:59:11.226988', '2020-02-01 06:59:11.226988')[0m
+  [1m[35m (216.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Create (12.1ms)[0m  [1m[32mINSERT INTO `channels` (`name`, `created_at`, `updated_at`) VALUES ('English', '2020-02-01 06:59:11.461494', '2020-02-01 06:59:11.461494')[0m
+  [1m[35m (97.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Create (10.9ms)[0m  [1m[32mINSERT INTO `channels` (`name`, `created_at`, `updated_at`) VALUES ('Panjabi', '2020-02-01 06:59:11.579687', '2020-02-01 06:59:11.579687')[0m
+  [1m[35m (39.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Create (15.8ms)[0m  [1m[32mINSERT INTO `channels` (`name`, `created_at`, `updated_at`) VALUES ('Kannada', '2020-02-01 06:59:11.633151', '2020-02-01 06:59:11.633151')[0m
+  [1m[35m (53.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` ORDER BY `channels`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 3 LIMIT 1[0m
+  [1m[36mShow Create (13.1ms)[0m  [1m[32mINSERT INTO `shows` (`channel_id`, `name`, `start_time`, `end_time`, `created_at`, `updated_at`) VALUES (3, 'Discovery', '2020-02-01 07:02:30', '2020-02-01 08:02:30', '2020-02-01 07:02:30.361031', '2020-02-01 07:02:30.361031')[0m
+  [1m[35m (33.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` LIMIT 11[0m
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` LIMIT 11[0m
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mShow Destroy (18.7ms)[0m  [1m[31mDELETE FROM `shows` WHERE `shows`.`id` = 1[0m
+  [1m[35m (65.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Create (15.0ms)[0m  [1m[32mINSERT INTO `channels` (`name`, `created_at`, `updated_at`) VALUES ('Telugu', '2020-02-01 07:06:48.479204', '2020-02-01 07:06:48.479204')[0m
+  [1m[35m (40.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Create (14.1ms)[0m  [1m[32mINSERT INTO `channels` (`name`, `created_at`, `updated_at`) VALUES ('Hindi', '2020-02-01 07:06:48.548813', '2020-02-01 07:06:48.548813')[0m
+  [1m[35m (56.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Create (19.6ms)[0m  [1m[32mINSERT INTO `channels` (`name`, `created_at`, `updated_at`) VALUES ('Tamil', '2020-02-01 07:06:48.624051', '2020-02-01 07:06:48.624051')[0m
+  [1m[35m (66.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Create (10.3ms)[0m  [1m[32mINSERT INTO `channels` (`name`, `created_at`, `updated_at`) VALUES ('English', '2020-02-01 07:06:48.716835', '2020-02-01 07:06:48.716835')[0m
+  [1m[35m (56.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Create (13.2ms)[0m  [1m[32mINSERT INTO `channels` (`name`, `created_at`, `updated_at`) VALUES ('Panjabi', '2020-02-01 07:06:48.790001', '2020-02-01 07:06:48.790001')[0m
+  [1m[35m (49.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Create (11.1ms)[0m  [1m[32mINSERT INTO `channels` (`name`, `created_at`, `updated_at`) VALUES ('Kannada', '2020-02-01 07:06:48.857489', '2020-02-01 07:06:48.857489')[0m
+  [1m[35m (69.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 4 LIMIT 1[0m
+  [1m[36mShow Create (1.2ms)[0m  [1m[32mINSERT INTO `shows` (`channel_id`, `name`, `start_time`, `end_time`, `created_at`, `updated_at`) VALUES (4, 'Discovery', '2020-02-01 07:06:48', '2020-02-01 08:06:48', '2020-02-01 07:06:48.995415', '2020-02-01 07:06:48.995415')[0m
+  [1m[35m (58.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 1 LIMIT 1[0m
+  [1m[36mShow Create (21.6ms)[0m  [1m[32mINSERT INTO `shows` (`channel_id`, `name`, `start_time`, `end_time`, `created_at`, `updated_at`) VALUES (1, 'Business today', '2020-02-01 07:06:49', '2020-02-01 08:06:49', '2020-02-01 07:06:49.060378', '2020-02-01 07:06:49.060378')[0m
+  [1m[35m (46.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Load (0.8ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 3 LIMIT 1[0m
+  [1m[36mShow Create (15.9ms)[0m  [1m[32mINSERT INTO `shows` (`channel_id`, `name`, `start_time`, `end_time`, `created_at`, `updated_at`) VALUES (3, 'Tradition', '2020-02-01 07:06:49', '2020-02-01 08:06:49', '2020-02-01 07:06:49.138716', '2020-02-01 07:06:49.138716')[0m
+  [1m[35m (73.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Load (0.7ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 2 LIMIT 1[0m
+  [1m[36mShow Create (6.9ms)[0m  [1m[32mINSERT INTO `shows` (`channel_id`, `name`, `start_time`, `end_time`, `created_at`, `updated_at`) VALUES (2, 'Interior', '2020-02-01 07:06:49', '2020-02-01 08:06:49', '2020-02-01 07:06:49.238422', '2020-02-01 07:06:49.238422')[0m
+  [1m[35m (49.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Load (0.8ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 5 LIMIT 1[0m
+  [1m[36mShow Create (4.6ms)[0m  [1m[32mINSERT INTO `shows` (`channel_id`, `name`, `start_time`, `end_time`, `created_at`, `updated_at`) VALUES (5, 'Dance', '2020-02-01 07:06:49', '2020-02-01 08:06:49', '2020-02-01 07:06:49.307540', '2020-02-01 07:06:49.307540')[0m
+  [1m[35m (65.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChannel Load (1.0ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 2 LIMIT 1[0m
+  [1m[36mShow Create (3.0ms)[0m  [1m[32mINSERT INTO `shows` (`channel_id`, `name`, `start_time`, `end_time`, `created_at`, `updated_at`) VALUES (2, 'Tourism', '2020-02-01 07:06:49', '2020-02-01 08:06:49', '2020-02-01 07:06:49.392447', '2020-02-01 07:06:49.392447')[0m
+  [1m[35m (48.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` ORDER BY `channels`.`id` ASC LIMIT 1[0m
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` ORDER BY `channels`.`id` ASC LIMIT 1[0m
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` ORDER BY `channels`.`id` ASC LIMIT 1[0m
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` WHERE `shows`.`channel_id` = 1 LIMIT 11[0m
+Started GET "/" for ::1 at 2020-02-01 12:42:44 +0530
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 3.6ms | Allocations: 3044)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: 32e57f147dbdcbbf0c82
+Version: webpack 4.41.5
+Time: 2697ms
+Built at: 02/01/2020 12:42:52 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbe9c4a129ab949e0636.js    124 KiB  application  [emitted] [immutable]  application
+js/application-bbe9c4a129ab949e0636.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bbe9c4a129ab949e0636.js js/application-bbe9c4a129ab949e0636.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 8438ms (Views: 8434.1ms | ActiveRecord: 0.0ms | Allocations: 24721)
+
+
+Started GET "/" for ::1 at 2020-02-01 12:50:54 +0530
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 1.1ms | Allocations: 1342)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: 31df3c98e8aa30e1b95b
+Version: webpack 4.41.5
+Time: 6519ms
+Built at: 02/01/2020 12:51:02 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-4c51adc5a7b0d276375d.js    439 KiB  application  [emitted] [immutable]  application
+js/application-4c51adc5a7b0d276375d.js.map    511 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-4c51adc5a7b0d276375d.js js/application-4c51adc5a7b0d276375d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 788 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 315 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+Completed 200 OK in 8844ms (Views: 8842.6ms | ActiveRecord: 0.0ms | Allocations: 6801)
+
+
+Started GET "/" for ::1 at 2020-02-01 12:52:45 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.7ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:2:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 20.6ms | Allocations: 10236)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 4.5ms | Allocations: 12602)
+
+
+  
+ActionView::Template::Error (undefined method `index' for #<Show:0x000000000b57fb60>):
+    1: 
+    2: - @shows.each_with_index do |show|
+    3:     = show.index+1
+    4:     = show.name
+  
+app/views/shows/index.html.haml:3
+app/views/shows/index.html.haml:2:in `each_with_index'
+app/views/shows/index.html.haml:2
+Started GET "/" for ::1 at 2020-02-01 12:52:59 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:2:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 11.0ms | Allocations: 4689)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.5ms | Allocations: 5929)
+
+
+  
+ActionView::Template::Error (undefined method `index' for #<Show:0x000000000bc8c8e0>):
+    1: 
+    2: - @shows.each_with_index do |show, index|
+    3:     = show.index+1
+    4:     = show.name
+  
+app/views/shows/index.html.haml:3
+app/views/shows/index.html.haml:2:in `each_with_index'
+app/views/shows/index.html.haml:2
+Started GET "/" for ::1 at 2020-02-01 12:53:13 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:2:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 8.6ms | Allocations: 3830)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms | Allocations: 5037)
+
+
+  
+ActionView::Template::Error (undefined method `index' for 0:Integer):
+    1: 
+    2: - @shows.each_with_index do |index, show|
+    3:     = show.index+1
+    4:     = show.name
+  
+app/views/shows/index.html.haml:3
+app/views/shows/index.html.haml:2:in `each_with_index'
+app/views/shows/index.html.haml:2
+Started GET "/" for ::1 at 2020-02-01 12:54:19 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:2:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 7.7ms | Allocations: 2412)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.5ms | Allocations: 5846)
+
+
+Started GET "/" for ::1 at 2020-02-01 12:56:24 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:10:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 8.6ms | Allocations: 3221)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.5ms | Allocations: 6656)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:02:38 +0530
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:10:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 14.0ms | Allocations: 9703)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: 405792a57172cb0efd8a
+Version: webpack 4.41.5
+Time: 3837ms
+Built at: 02/01/2020 1:02:44 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f1098feed25691788a34.js    1.1 MiB  application  [emitted] [immutable]  application
+js/application-f1098feed25691788a34.js.map    1.2 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f1098feed25691788a34.js js/application-f1098feed25691788a34.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 788 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 688 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+Completed 200 OK in 5992ms (Views: 5970.2ms | ActiveRecord: 3.4ms | Allocations: 17763)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:05:24 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:10:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 5.0ms | Allocations: 3221)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.6ms | Allocations: 6674)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:06:04 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:10:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.6ms | Allocations: 3221)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 45.4ms | ActiveRecord: 0.5ms | Allocations: 6686)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:07:26 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:10:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 3.4ms | Allocations: 3221)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.5ms | Allocations: 6677)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:08:49 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:10:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.0ms | Allocations: 3219)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.5ms | Allocations: 6678)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:09:10 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:10:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 1.7ms | Allocations: 894)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.4ms | Allocations: 3497)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:09:20 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:10:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 9.2ms | Allocations: 3213)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 64.8ms | ActiveRecord: 0.4ms | Allocations: 6662)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:09:29 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:10:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 3.0ms | Allocations: 3213)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.4ms | Allocations: 6655)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:13:11 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.8ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:10:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 20.1ms | Allocations: 3379)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 56.1ms | ActiveRecord: 0.8ms | Allocations: 6850)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:14:06 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.8ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:10:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 10.6ms | Allocations: 3368)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 44.2ms | ActiveRecord: 0.8ms | Allocations: 6816)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:15:21 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:13:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 9.2ms | Allocations: 3836)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.5ms | Allocations: 7294)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:15:57 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:13:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 8.1ms | Allocations: 4113)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.4ms | Allocations: 7567)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:16:08 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:13:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 7.3ms | Allocations: 4110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.4ms | Allocations: 7570)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:16:42 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 8.2ms | Allocations: 4347)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.4ms | Allocations: 7816)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:18:52 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.7ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 4 LIMIT 1[0m
+  ↳ app/views/shows/index.html.haml:22
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shows/index.html.haml:22
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/shows/index.html.haml:22
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/shows/index.html.haml:22
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/shows/index.html.haml:22
+  [1m[36mCACHE Channel Load (0.0ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shows/index.html.haml:22
+  Rendered shows/index.html.haml within layouts/application (Duration: 56.6ms | Allocations: 15993)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 91ms (Views: 84.6ms | ActiveRecord: 4.8ms | Allocations: 19443)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:19:31 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.7ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 4 LIMIT 1[0m
+  ↳ app/views/shows/index.html.haml:22
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shows/index.html.haml:22
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/shows/index.html.haml:22
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/shows/index.html.haml:22
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/shows/index.html.haml:22
+  [1m[36mCACHE Channel Load (0.0ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shows/index.html.haml:22
+  Rendered shows/index.html.haml within layouts/application (Duration: 19.7ms | Allocations: 9463)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 2.9ms | Allocations: 12909)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:22:16 +0530
+Processing by ShowsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1134)
+
+
+  
+TypeError (wrong argument type Symbol (expected Module)):
+  
+app/controllers/shows_controller.rb:4:in `include'
+app/controllers/shows_controller.rb:4:in `index'
+Started GET "/" for ::1 at 2020-02-01 13:23:35 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 234.0ms | Allocations: 97242)
+Completed 500 Internal Server Error in 243ms (ActiveRecord: 6.5ms | Allocations: 99146)
+
+
+  
+ActionView::Template::Error (undefined method `get_time_range' for #<#<Class:0x000000000c575f60>:0x000000000c574408>):
+    21:                             %span.badge.badge-primary
+    22:                                 = show.channel.name
+    23:                             %span.badge.badge-info
+    24:                                 = get_time_range(show)
+  
+app/views/shows/index.html.haml:24
+app/views/shows/index.html.haml:14:in `each_with_index'
+app/views/shows/index.html.haml:14
+Started GET "/" for ::1 at 2020-02-01 13:23:53 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 19.6ms | Allocations: 10152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 44.5ms | ActiveRecord: 6.2ms | Allocations: 13634)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` ORDER BY `shows`.`id` ASC LIMIT 1[0m
+Started GET "/" for ::1 at 2020-02-01 13:31:39 +0530
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.7ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.6ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 13.6ms | Allocations: 11824)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.3ms | Allocations: 13031)
+
+
+  
+ActionView::Template::Error (undefined method `stftime' for Sat, 01 Feb 2020 07:06:48 UTC +00:00:Time
+Did you mean?  strftime):
+    21:                             %span.badge.badge-primary
+    22:                                 = show.channel.name
+    23:                             %span.badge.badge-info
+    24:                                 = get_time_range(show)
+  
+app/helpers/shows_helper.rb:3:in `get_time_range'
+app/views/shows/index.html.haml:24
+app/views/shows/index.html.haml:14:in `each_with_index'
+app/views/shows/index.html.haml:14
+Started GET "/" for ::1 at 2020-02-01 13:32:37 +0530
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.6ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 51.1ms | Allocations: 19776)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 109ms (Views: 82.9ms | ActiveRecord: 6.5ms | Allocations: 25718)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:33:09 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.8ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 19.6ms | Allocations: 10272)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 44.2ms | ActiveRecord: 6.1ms | Allocations: 13575)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:47:32 +0530
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.8ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.6ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 15.6ms | Allocations: 14089)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.4ms | Allocations: 19575)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:47:55 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 5.4ms | Allocations: 2266)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.8ms | Allocations: 3816)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Media</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">Media</a>
+      <%= form_tag(search_media_path, method: 'get', class="form-inline  my-2 my-lg-0") do %>
+        <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control mr-sm-2" aria-label="Search" %>
+        <%= button_tag "", class: 'btn btn-outline-success my-2 my-sm-0', name: 'Search' %> 
+      <% end %>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Media</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:    
+12:      <body>
+13:        <nav class="navbar navbar-dark bg-dark">
+14:          <a class="navbar-brand" href="/">Media</a>
+15:          <%= form_tag(search_media_path, method: 'get', class="form-inline  my-2 my-lg-0") do %>
+16:            <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control mr-sm-2" aria-label="Search" %>
+17:            <%= button_tag "", class: 'btn btn-outline-success my-2 my-sm-0', name: 'Search' %> 
+18:          <% end %>
+19:        </nav>
+20:        <div class="container">
+21:          <%= yield %>
+22:        </div>
+23:      </body>
+24:    </html>
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected '='
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end, expecting end-of-input
+app/views/layouts/application.html.erb:15: syntax error, unexpected '='
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end, expecting end-of-input
+app/views/layouts/application.html.erb:15: syntax error, unexpected '='
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end, expecting end-of-input
+app/views/layouts/application.html.erb:15: syntax error, unexpected '='
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end, expecting end-of-input
+app/views/layouts/application.html.erb:15: syntax error, unexpected '='
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end, expecting end-of-input
+app/views/layouts/application.html.erb:15: syntax error, unexpected '='
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/layouts/application.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end, expecting end-of-input
+Started GET "/" for ::1 at 2020-02-01 13:48:45 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 7.7ms | Allocations: 6422)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.8ms | Allocations: 8681)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Media</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">Media</a>
+      <%= form_tag(search_media_path, method: 'get', class: "form-inline my-2 my-lg-0") do %>
+        <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control mr-sm-2", aria-label="Search" %>
+        <%= button_tag "", class: 'btn btn-outline-success my-2 my-sm-0', name: 'Search' %> 
+      <% end %>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Media</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:    
+12:      <body>
+13:        <nav class="navbar navbar-dark bg-dark">
+14:          <a class="navbar-brand" href="/">Media</a>
+15:          <%= form_tag(search_media_path, method: 'get', class: "form-inline my-2 my-lg-0") do %>
+16:            <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control mr-sm-2", aria-label="Search" %>
+17:            <%= button_tag "", class: 'btn btn-outline-success my-2 my-sm-0', name: 'Search' %> 
+18:          <% end %>
+19:        </nav>
+20:        <div class="container">
+21:          <%= yield %>
+22:        </div>
+23:      </body>
+24:    </html>
+  
+app/views/layouts/application.html.erb:16: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:16: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:16: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:16: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:16: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:16: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end, expecting ')'
+Started GET "/" for ::1 at 2020-02-01 13:49:02 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 9.1ms | Allocations: 6365)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 57.1ms | ActiveRecord: 1.0ms | Allocations: 10119)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:49:23 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 8.4ms | Allocations: 6348)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 1.0ms | Allocations: 10064)
+
+
+Started GET "/search?search=test&search=" for ::1 at 2020-02-01 13:49:30 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>""}
+Completed 406 Not Acceptable in 8ms (ActiveRecord: 0.0ms | Allocations: 1987)
+
+
+  
+ActionController::MissingExactTemplate (ShowsController#search is missing a template for request formats: text/html):
+  
+actionpack (6.0.2.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.2.1) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.2.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.2.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.2.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/search?search=&search=" for ::1 at 2020-02-01 13:50:02 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>""}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 662)
+
+
+  
+ActionController::MissingExactTemplate (ShowsController#search is missing a template for request formats: text/html):
+  
+actionpack (6.0.2.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.2.1) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.2.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.2.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.2.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-02-01 13:51:02 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.8ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.9ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 29.5ms | Allocations: 14297)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 77.5ms | ActiveRecord: 7.2ms | Allocations: 18678)
+
+
+Started GET "/search?search=&button=" for ::1 at 2020-02-01 13:51:06 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 341)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:51:06 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.6ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 7.6ms | Allocations: 2268)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 1.1ms | Allocations: 5046)
+
+
+Started GET "/search?search=&button=" for ::1 at 2020-02-01 13:51:08 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:51:08 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.9ms | Allocations: 2267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.8ms | Allocations: 5048)
+
+
+Started GET "/search?search=&button=" for ::1 at 2020-02-01 13:51:09 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 319)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:51:09 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 5.1ms | Allocations: 2267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.8ms | Allocations: 5044)
+
+
+Started GET "/search?search=&button=" for ::1 at 2020-02-01 13:51:09 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 305)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:51:09 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.1ms | Allocations: 2277)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.8ms | Allocations: 5062)
+
+
+Started GET "/search?search=&button=" for ::1 at 2020-02-01 13:51:10 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 311)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:51:10 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.7ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.6ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 9.0ms | Allocations: 2267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 1.2ms | Allocations: 5051)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:52:06 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 19.3ms | Allocations: 10244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 43.1ms | ActiveRecord: 6.0ms | Allocations: 13680)
+
+
+Started GET "/search?search=&button=" for ::1 at 2020-02-01 13:52:08 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 333)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:52:08 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.3ms | Allocations: 2267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.9ms | Allocations: 5069)
+
+
+Started GET "/search?search=&button=" for ::1 at 2020-02-01 13:52:09 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 341)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:52:09 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.7ms | Allocations: 2267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.8ms | Allocations: 5049)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:52:21 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.7ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 18.7ms | Allocations: 10244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 42.5ms | ActiveRecord: 5.4ms | Allocations: 13703)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:56 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:56 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 330)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:56 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:56 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:56 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 314)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:56 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:56 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:56 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 340)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:56 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 318)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 320)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 338)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 318)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 330)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 336)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:57 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 320)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 320)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 338)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 314)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 342)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:54:58 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:03 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:03 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 314)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 332)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 336)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 330)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 336)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:04 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:55:05 +0530
+Processing by ShowsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:56:27 +0530
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.6ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 52.6ms | Allocations: 19776)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 127ms (Views: 102.4ms | ActiveRecord: 6.4ms | Allocations: 26017)
+
+
+Started GET "/shows?search=&button=" for ::1 at 2020-02-01 13:56:29 +0530
+Processing by ShowsController#index as HTML
+  Parameters: {"search"=>"", "button"=>""}
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.9ms | Allocations: 2279)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.8ms | Allocations: 5092)
+
+
+Started GET "/shows?search=&button=" for ::1 at 2020-02-01 13:57:30 +0530
+Processing by ShowsController#index as HTML
+  Parameters: {"search"=>"", "button"=>""}
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 8.6ms | Allocations: 6379)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 57.3ms | ActiveRecord: 0.9ms | Allocations: 10123)
+
+
+Started GET "/shows" for ::1 at 2020-02-01 13:57:34 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.8ms | Allocations: 2279)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.8ms | Allocations: 5078)
+
+
+Started GET "/shows" for ::1 at 2020-02-01 13:58:24 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 7.0ms | Allocations: 6348)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 55.1ms | ActiveRecord: 0.8ms | Allocations: 10069)
+
+
+Started GET "/shows" for ::1 at 2020-02-01 13:58:25 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.9ms | Allocations: 2279)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.7ms | Allocations: 5082)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:58:30 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.8ms | Allocations: 2267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.8ms | Allocations: 5071)
+
+
+Started GET "/" for ::1 at 2020-02-01 13:59:16 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.7ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 10.1ms | Allocations: 6349)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 44.9ms | ActiveRecord: 1.2ms | Allocations: 10082)
+
+
+Started GET "/shows?search=&commit=Search" for ::1 at 2020-02-01 13:59:17 +0530
+Processing by ShowsController#index as HTML
+  Parameters: {"search"=>"", "commit"=>"Search"}
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 5.2ms | Allocations: 2268)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.8ms | Allocations: 5078)
+
+
+Started GET "/shows?search=&commit=Search" for ::1 at 2020-02-01 14:02:36 +0530
+Processing by ShowsController#index as HTML
+  Parameters: {"search"=>"", "commit"=>"Search"}
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 18.7ms | Allocations: 10245)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 42.3ms | ActiveRecord: 5.6ms | Allocations: 13725)
+
+
+Started GET "/shows?search=Discove&commit=Search" for ::1 at 2020-02-01 14:02:43 +0530
+Processing by ShowsController#index as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.5ms | Allocations: 2267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.8ms | Allocations: 5073)
+
+
+Started GET "/shows?search=Discove&commit=Search" for ::1 at 2020-02-01 14:03:24 +0530
+Processing by ShowsController#index as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.6ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 22.0ms | Allocations: 10211)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 46.8ms | ActiveRecord: 5.4ms | Allocations: 13684)
+
+
+Started GET "/shows?search=Discove&commit=Search" for ::1 at 2020-02-01 14:03:26 +0530
+Processing by ShowsController#index as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (1.2ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 8.1ms | Allocations: 2267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 1.7ms | Allocations: 5083)
+
+
+Started GET "/shows?search=Discove&commit=Search" for ::1 at 2020-02-01 14:04:32 +0530
+Processing by ShowsController#index as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 26.7ms | Allocations: 10247)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 42.8ms | ActiveRecord: 12.9ms | Allocations: 13722)
+
+
+Started GET "/shows?search=Discove&commit=Search" for ::1 at 2020-02-01 14:04:33 +0530
+Processing by ShowsController#index as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.7ms | Allocations: 2267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.8ms | Allocations: 5085)
+
+
+Started GET "/shows?search=Discove&commit=Search" for ::1 at 2020-02-01 14:05:25 +0530
+Processing by ShowsController#index as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 17.6ms | Allocations: 10211)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 41.8ms | ActiveRecord: 4.9ms | Allocations: 13691)
+
+
+Started GET "/shows?search=Discove&commit=Search" for ::1 at 2020-02-01 14:05:26 +0530
+Processing by ShowsController#index as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.0ms | Allocations: 2267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 1.0ms | Allocations: 5087)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:06:11 +0530
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 51.6ms | Allocations: 19776)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 108ms (Views: 82.6ms | ActiveRecord: 7.6ms | Allocations: 26058)
+
+
+Started GET "/shows?search=Discove&commit=Search" for ::1 at 2020-02-01 14:06:20 +0530
+Processing by ShowsController#index as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.9ms | Allocations: 2279)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.8ms | Allocations: 5104)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:07:00 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 18.9ms | Allocations: 6370)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 53.0ms | ActiveRecord: 1.0ms | Allocations: 10121)
+
+
+Started GET "/search?search=Discove&commit=Search" for ::1 at 2020-02-01 14:07:03 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 983)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/shows_controller.rb:11:in `search'
+Started GET "/" for ::1 at 2020-02-01 14:07:19 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.6ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 19.9ms | Allocations: 10308)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 44.5ms | ActiveRecord: 6.5ms | Allocations: 13876)
+
+
+Started GET "/search?search=Discove&commit=Search" for ::1 at 2020-02-01 14:07:22 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 988)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/shows_controller.rb:11:in `search'
+Started GET "/" for ::1 at 2020-02-01 14:07:46 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 18.9ms | Allocations: 10244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 44.8ms | ActiveRecord: 4.9ms | Allocations: 13713)
+
+
+Started GET "/search?search=Discove&commit=Search" for ::1 at 2020-02-01 14:07:49 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+Completed 500 Internal Server Error in 22974ms (ActiveRecord: 0.0ms | Allocations: 122149)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/shows_controller.rb:12:in `search'
+Started GET "/" for ::1 at 2020-02-01 14:15:53 +0530
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.8ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.9ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 14.6ms | Allocations: 10127)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 45.5ms | ActiveRecord: 1.6ms | Allocations: 13615)
+
+
+Started GET "/search?search=Discove&commit=Search" for ::1 at 2020-02-01 14:15:57 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+Completed 500 Internal Server Error in 27474ms (ActiveRecord: 0.0ms | Allocations: 69622)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/shows_controller.rb:12:in `search'
+Started GET "/search?search=&commit=Search" for ::1 at 2020-02-01 14:17:54 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"", "commit"=>"Search"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 344)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:17:54 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 5.4ms | Allocations: 2275)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.9ms | Allocations: 5089)
+
+
+Started GET "/search?search=&commit=Search" for ::1 at 2020-02-01 14:17:56 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"", "commit"=>"Search"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:17:56 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.5ms | Allocations: 2267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.9ms | Allocations: 5078)
+
+
+Started GET "/search?search=Discove&commit=Search" for ::1 at 2020-02-01 14:18:08 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+Completed 500 Internal Server Error in 12239ms (ActiveRecord: 0.0ms | Allocations: 31858)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/shows_controller.rb:12:in `search'
+Started GET "/" for ::1 at 2020-02-01 14:18:46 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 33.1ms | Allocations: 10244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 44.3ms | ActiveRecord: 19.2ms | Allocations: 13726)
+
+
+Started GET "/search?search=Discove&commit=Search" for ::1 at 2020-02-01 14:18:49 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 980)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/shows_controller.rb:11:in `search'
+Started GET "/" for ::1 at 2020-02-01 14:19:42 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 19.2ms | Allocations: 10252)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 42.9ms | ActiveRecord: 5.8ms | Allocations: 13743)
+
+
+Started GET "/search?search=&commit=Search" for ::1 at 2020-02-01 14:19:46 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"", "commit"=>"Search"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 333)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:19:46 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 4.8ms | Allocations: 2267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.8ms | Allocations: 5073)
+
+
+Started GET "/search?search=Discove&commit=Search" for ::1 at 2020-02-01 14:19:48 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` INNER JOIN `channels` ON `channels`.`id` = `shows`.`channel_id` LIMIT 11[0m
+Completed 500 Internal Server Error in 117ms (ActiveRecord: 0.0ms | Allocations: 5647)
+
+
+  [1m[36mCACHE Show Load (0.0ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` INNER JOIN `channels` ON `channels`.`id` = `shows`.`channel_id` LIMIT 11[0m
+  
+NoMethodError (undefined method `serach' for #<Show::ActiveRecord_Relation:0x0000000008a112d0>
+Did you mean?  each):
+  
+app/controllers/shows_controller.rb:12:in `search'
+Started GET "/" for ::1 at 2020-02-01 14:20:08 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.7ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 22.1ms | Allocations: 10237)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 53.6ms | ActiveRecord: 7.9ms | Allocations: 13727)
+
+
+Started GET "/search?search=Discove&commit=Search" for ::1 at 2020-02-01 14:20:10 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  [1m[36mShow Load (30.3ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` INNER JOIN `channels` ON `channels`.`id` = `shows`.`channel_id` WHERE (lower(channels.name) LIKE '%discove%' OR lower(shows.name) LIKE '%discove%')[0m
+  ↳ app/models/show.rb:5:in `uniq'
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 30.3ms | Allocations: 2399)
+
+
+  
+NoMethodError (undefined method `order' for #<Array:0x000000000c1869b8>):
+  
+app/controllers/shows_controller.rb:12:in `search'
+Started GET "/" for ::1 at 2020-02-01 14:21:25 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/index.html.haml:14:in `each_with_index'
+  Rendered shows/index.html.haml within layouts/application (Duration: 19.8ms | Allocations: 10244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 44.5ms | ActiveRecord: 6.3ms | Allocations: 13728)
+
+
+Started GET "/search?search=Discove&commit=Search" for ::1 at 2020-02-01 14:21:28 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` INNER JOIN `channels` ON `channels`.`id` = `shows`.`channel_id` WHERE (lower(channels.name) LIKE '%discove%' OR lower(shows.name) LIKE '%discove%') ORDER BY shows.name DESC[0m
+  ↳ app/models/show.rb:5:in `uniq'
+Completed 406 Not Acceptable in 12ms (ActiveRecord: 0.5ms | Allocations: 2875)
+
+
+  
+ActionController::MissingExactTemplate (ShowsController#search is missing a template for request formats: text/html):
+  
+actionpack (6.0.2.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.2.1) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.2.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.2.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.2.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-02-01 14:24:09 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/index.html.haml within layouts/application (Duration: 17.6ms | Allocations: 3871)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 5708)
+
+
+  
+ActionView::Template::Error (Missing partial shows/_show, application/_show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder, :haml]}. Searched in:
+  * "C:/Users/interview/Rajesh/media/app/views"
+  * "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actiontext-6.0.2.1/app/views"
+  * "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionmailbox-6.0.2.1/app/views"
+):
+    2:     .card-header
+    3:         Show Time
+    4:     .card-body
+    5:         = render 'show'        
+  
+app/views/shows/index.html.haml:5
+Started GET "/" for ::1 at 2020-02-01 14:24:40 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.7ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:10:in `each_with_index'
+  [1m[36mChannel Load (0.6ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:10:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 27.9ms | Allocations: 13343)
+  Rendered shows/index.html.haml within layouts/application (Duration: 34.6ms | Allocations: 15951)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 62.5ms | ActiveRecord: 6.0ms | Allocations: 19681)
+
+
+Started GET "/search?search=Discove&commit=Search" for ::1 at 2020-02-01 14:24:43 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` INNER JOIN `channels` ON `channels`.`id` = `shows`.`channel_id` WHERE (lower(channels.name) LIKE '%discove%' OR lower(shows.name) LIKE '%discove%') ORDER BY shows.name DESC[0m
+  ↳ app/models/show.rb:5:in `uniq'
+  Rendering shows/search.html.haml within layouts/application
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 4 LIMIT 1[0m
+  ↳ app/views/shows/_shows.html.haml:18
+  Rendered shows/_shows.html.haml (Duration: 5.9ms | Allocations: 1478)
+  Rendered shows/search.html.haml within layouts/application (Duration: 12.5ms | Allocations: 3941)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 41.1ms | ActiveRecord: 0.9ms | Allocations: 7660)
+
+
+Started GET "/search?search=test&commit=Search" for ::1 at 2020-02-01 14:24:49 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"test", "commit"=>"Search"}
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` INNER JOIN `channels` ON `channels`.`id` = `shows`.`channel_id` WHERE (lower(channels.name) LIKE '%test%' OR lower(shows.name) LIKE '%test%') ORDER BY shows.name DESC[0m
+  ↳ app/models/show.rb:5:in `uniq'
+  Rendering shows/search.html.haml within layouts/application
+  Rendered shows/_shows.html.haml (Duration: 0.0ms | Allocations: 13)
+  Rendered shows/search.html.haml within layouts/application (Duration: 0.4ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.5ms | Allocations: 3690)
+
+
+Started GET "/search?search=Discove&commit=Search" for ::1 at 2020-02-01 14:24:58 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"Discove", "commit"=>"Search"}
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` INNER JOIN `channels` ON `channels`.`id` = `shows`.`channel_id` WHERE (lower(channels.name) LIKE '%discove%' OR lower(shows.name) LIKE '%discove%') ORDER BY shows.name DESC[0m
+  ↳ app/models/show.rb:5:in `uniq'
+  Rendering shows/search.html.haml within layouts/application
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 4 LIMIT 1[0m
+  ↳ app/views/shows/_shows.html.haml:18
+  Rendered shows/_shows.html.haml (Duration: 2.1ms | Allocations: 832)
+  Rendered shows/search.html.haml within layouts/application (Duration: 2.5ms | Allocations: 914)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.9ms | Allocations: 4544)
+
+
+Started GET "/search?search=english&commit=Search" for ::1 at 2020-02-01 14:25:05 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"english", "commit"=>"Search"}
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` INNER JOIN `channels` ON `channels`.`id` = `shows`.`channel_id` WHERE (lower(channels.name) LIKE '%english%' OR lower(shows.name) LIKE '%english%') ORDER BY shows.name DESC[0m
+  ↳ app/models/show.rb:5:in `uniq'
+  Rendering shows/search.html.haml within layouts/application
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 4 LIMIT 1[0m
+  ↳ app/views/shows/_shows.html.haml:18
+  Rendered shows/_shows.html.haml (Duration: 2.1ms | Allocations: 832)
+  Rendered shows/search.html.haml within layouts/application (Duration: 2.5ms | Allocations: 914)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 1.0ms | Allocations: 4545)
+
+
+Started GET "/search?search=tamil&commit=Search" for ::1 at 2020-02-01 14:25:10 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"tamil", "commit"=>"Search"}
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` INNER JOIN `channels` ON `channels`.`id` = `shows`.`channel_id` WHERE (lower(channels.name) LIKE '%tamil%' OR lower(shows.name) LIKE '%tamil%') ORDER BY shows.name DESC[0m
+  ↳ app/models/show.rb:5:in `uniq'
+  Rendering shows/search.html.haml within layouts/application
+  [1m[36mChannel Load (1.2ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/shows/_shows.html.haml:18
+  Rendered shows/_shows.html.haml (Duration: 2.8ms | Allocations: 832)
+  Rendered shows/search.html.haml within layouts/application (Duration: 3.1ms | Allocations: 914)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 1.7ms | Allocations: 4548)
+
+
+Started GET "/search?search=&commit=Search" for ::1 at 2020-02-01 14:25:20 +0530
+Processing by ShowsController#search as HTML
+  Parameters: {"search"=>"", "commit"=>"Search"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 325)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:25:20 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:10:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:10:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 5.2ms | Allocations: 2304)
+  Rendered shows/index.html.haml within layouts/application (Duration: 5.5ms | Allocations: 2386)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.9ms | Allocations: 5188)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:26:18 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.8ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 12.6ms | Allocations: 5608)
+  Rendered shows/index.html.haml within layouts/application (Duration: 16.9ms | Allocations: 8219)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 1.3ms | Allocations: 11958)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:30:27 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.6ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 10.0ms | Allocations: 5809)
+  Rendered shows/index.html.haml within layouts/application (Duration: 13.1ms | Allocations: 8403)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 50.8ms | ActiveRecord: 1.2ms | Allocations: 12133)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:34:02 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.7ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 6.0ms | Allocations: 2305)
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.4ms | Allocations: 2387)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: 01f9bf30211a31efa316
+Version: webpack 4.41.5
+Time: 3341ms
+Built at: 02/01/2020 2:34:08 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-223eb7719d331aa7f549.js   1.36 MiB  application  [emitted] [immutable]  application
+js/application-223eb7719d331aa7f549.js.map   1.49 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-223eb7719d331aa7f549.js js/application-223eb7719d331aa7f549.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 788 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+Completed 200 OK in 5631ms (Views: 5629.2ms | ActiveRecord: 1.2ms | Allocations: 7344)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:34:33 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 6.2ms | Allocations: 2304)
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.6ms | Allocations: 2386)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: fe1448c17971e75c03d9
+Version: webpack 4.41.5
+Time: 4348ms
+Built at: 02/01/2020 2:34:39 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c2c36dd728cb3279c265.js   2.53 MiB  application  [emitted] [immutable]  application
+js/application-c2c36dd728cb3279c265.js.map   2.69 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c2c36dd728cb3279c265.js js/application-c2c36dd728cb3279c265.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 835 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 10 hidden modules
+
+Completed 200 OK in 6614ms (Views: 6612.9ms | ActiveRecord: 0.8ms | Allocations: 7317)
+
+
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1920439836080715285', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddColumnIsFavToShows (20200201090627)
+  [1m[35m (587.4ms)[0m  [1m[35mALTER TABLE `shows` ADD `is_fav` tinyint(1)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200201090627')[0m
+  [1m[35m (81.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('1920439836080715285')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2020-02-01 14:41:25 +0530
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.6ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 23.3ms | Allocations: 13585)
+  Rendered shows/index.html.haml within layouts/application (Duration: 26.4ms | Allocations: 16196)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: fe1448c17971e75c03d9
+Version: webpack 4.41.5
+Time: 3412ms
+Built at: 02/01/2020 2:41:31 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c2c36dd728cb3279c265.js   2.53 MiB  application  [emitted] [immutable]  application
+js/application-c2c36dd728cb3279c265.js.map   2.69 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c2c36dd728cb3279c265.js js/application-c2c36dd728cb3279c265.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 835 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 10 hidden modules
+
+Completed 200 OK in 5770ms (Views: 5764.1ms | ActiveRecord: 1.1ms | Allocations: 22698)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:42:00 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.7ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 10.4ms | Allocations: 2306)
+  Rendered shows/index.html.haml within layouts/application (Duration: 10.9ms | Allocations: 2388)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: fe1448c17971e75c03d9
+Version: webpack 4.41.5
+Time: 3507ms
+Built at: 02/01/2020 2:42:05 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c2c36dd728cb3279c265.js   2.53 MiB  application  [emitted] [immutable]  application
+js/application-c2c36dd728cb3279c265.js.map   2.69 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c2c36dd728cb3279c265.js js/application-c2c36dd728cb3279c265.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 835 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 10 hidden modules
+
+Completed 200 OK in 5670ms (Views: 5666.9ms | ActiveRecord: 1.2ms | Allocations: 7400)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:42:13 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (1.2ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (1.0ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 10.0ms | Allocations: 2305)
+  Rendered shows/index.html.haml within layouts/application (Duration: 10.5ms | Allocations: 2387)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 44.3ms | ActiveRecord: 2.2ms | Allocations: 5225)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:43:21 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  Rendered shows/_shows.html.haml (Duration: 2.9ms | Allocations: 2297)
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.1ms | Allocations: 4907)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 6133)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 19 spaces used for indentation, but the rest of the document was indented using 4 spaces.):
+    21:                     %span.badge.badge-info
+    22:                         = get_time_range(show)
+    23:                 %td
+    24:                    #favourite
+    25:                     %i.fas.fa-heart
+  
+app/views/shows/_shows.html.haml:24
+app/views/shows/index.html.haml:5
+Started GET "/" for ::1 at 2020-02-01 14:43:34 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 11.9ms | Allocations: 6035)
+  Rendered shows/index.html.haml within layouts/application (Duration: 15.0ms | Allocations: 8643)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 1.0ms | Allocations: 12386)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:47:53 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 50.9ms | Allocations: 14800)
+  Rendered shows/index.html.haml within layouts/application (Duration: 54.4ms | Allocations: 17388)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: fe1448c17971e75c03d9
+Version: webpack 4.41.5
+Time: 3392ms
+Built at: 02/01/2020 2:47:58 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c2c36dd728cb3279c265.js   2.53 MiB  application  [emitted] [immutable]  application
+js/application-c2c36dd728cb3279c265.js.map   2.69 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c2c36dd728cb3279c265.js js/application-c2c36dd728cb3279c265.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 835 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 10 hidden modules
+
+Completed 200 OK in 5571ms (Views: 5548.0ms | ActiveRecord: 18.9ms | Allocations: 23874)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:49:47 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 5.4ms | Allocations: 2306)
+  Rendered shows/index.html.haml within layouts/application (Duration: 5.7ms | Allocations: 2388)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: be36aa134fe82e2d48fc
+Version: webpack 4.41.5
+Time: 3513ms
+Built at: 02/01/2020 2:49:52 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3c194cda1f2c2a271d15.js   2.53 MiB  application  [emitted] [immutable]  application
+js/application-3c194cda1f2c2a271d15.js.map   2.69 MiB  application  [emitted] [dev]        application
+           js/show-6dc0308e036f4e107bfc.js    307 KiB         show  [emitted] [immutable]  show
+       js/show-6dc0308e036f4e107bfc.js.map    363 KiB         show  [emitted] [dev]        show
+                             manifest.json  654 bytes               [emitted]              
+Entrypoint application = js/application-3c194cda1f2c2a271d15.js js/application-3c194cda1f2c2a271d15.js.map
+Entrypoint show = js/show-6dc0308e036f4e107bfc.js js/show-6dc0308e036f4e107bfc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 859 bytes {application} [built]
+[./app/javascript/packs/show.js] 112 bytes {show} {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {show} [built]
+    + 10 hidden modules
+
+Completed 200 OK in 5659ms (Views: 5655.1ms | ActiveRecord: 0.9ms | Allocations: 7369)
+
+
+Started GET "/" for ::1 at 2020-02-01 14:53:25 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.5ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 12.7ms | Allocations: 6733)
+  Rendered shows/index.html.haml within layouts/application (Duration: 16.4ms | Allocations: 9344)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: c61e0cb0bd8071025fea
+Version: webpack 4.41.5
+Time: 3577ms
+Built at: 02/01/2020 2:53:31 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d07634bbd3467e6d7db5.js   2.53 MiB  application  [emitted] [immutable]  application
+js/application-d07634bbd3467e6d7db5.js.map   2.69 MiB  application  [emitted] [dev]        application
+           js/show-723afb1d4b91ca495d69.js    307 KiB         show  [emitted] [immutable]  show
+       js/show-723afb1d4b91ca495d69.js.map    363 KiB         show  [emitted] [dev]        show
+                             manifest.json  654 bytes               [emitted]              
+Entrypoint application = js/application-d07634bbd3467e6d7db5.js js/application-d07634bbd3467e6d7db5.js.map
+Entrypoint show = js/show-723afb1d4b91ca495d69.js js/show-723afb1d4b91ca495d69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 859 bytes {application} [built]
+[./app/javascript/packs/show.js] 165 bytes {show} {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {show} [built]
+    + 10 hidden modules
+
+Completed 200 OK in 5739ms (Views: 5735.6ms | ActiveRecord: 1.1ms | Allocations: 15240)
+
+
+Started GET "/" for ::1 at 2020-02-01 15:06:15 +0530
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.7ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.7ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 20.9ms | Allocations: 15176)
+  Rendered shows/index.html.haml within layouts/application (Duration: 32.0ms | Allocations: 17786)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: a8a23600925ed7e15df6
+Version: webpack 4.41.5
+Time: 3544ms
+Built at: 02/01/2020 3:06:21 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d51c592ec8d2a5c014fa.js   2.53 MiB  application  [emitted] [immutable]  application
+js/application-d51c592ec8d2a5c014fa.js.map   2.69 MiB  application  [emitted] [dev]        application
+           js/show-a4844da8a112acb1d348.js   8.01 KiB         show  [emitted] [immutable]  show
+       js/show-a4844da8a112acb1d348.js.map   3.51 KiB         show  [emitted] [dev]        show
+                             manifest.json  654 bytes               [emitted]              
+Entrypoint application = js/application-d51c592ec8d2a5c014fa.js js/application-d51c592ec8d2a5c014fa.js.map
+Entrypoint show = js/show-a4844da8a112acb1d348.js js/show-a4844da8a112acb1d348.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 859 bytes {application} [built]
+[./app/javascript/packs/show.js] 4.15 KiB {show} {application} [built] [failed] [1 error]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 10 hidden modules
+
+ERROR in ./app/javascript/packs/show.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: C:\Users\interview\Rajesh\media\app\javascript\packs\show.js: Unexpected token, expected ";" (4:39)
+
+  2 |     $("#show_table #favourite").click(function() {
+  3 |         var fav = ($("#is_fav").val()  == false) ?  true : false
+> 4 |         var show_id = $("#show_id"),val()
+    |                                        ^
+  5 |         $.ajax({
+  6 |             method: "PUT",
+  7 |             url: "/shows/" + show_id,
+    at Parser.raise (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:7017:17)
+    at Parser.unexpected (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:8395:16)
+    at Parser.semicolon (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:8377:40)
+    at Parser.parseVarStatement (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:11159:10)
+    at Parser.parseStatementContent (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:10757:21)
+    at Parser.parseStatement (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:10690:17)
+    at Parser.parseBlockOrModuleBlockBody (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:11264:25)
+    at Parser.parseBlockBody (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:11251:10)
+    at Parser.parseBlock (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:11235:10)
+    at Parser.parseFunctionBody (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:10252:24)
+    at Parser.parseFunctionBodyAndFinish (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:10222:10)
+    at C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:11394:12
+    at Parser.withTopicForbiddingContext (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:10565:14)
+    at Parser.parseFunction (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:11393:10)
+    at Parser.parseFunctionExpression (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9714:17)
+    at Parser.parseExprAtom (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9622:21)
+    at Parser.parseExprSubscripts (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9259:23)
+    at Parser.parseMaybeUnary (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9239:21)
+    at Parser.parseExprOps (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9109:23)
+    at Parser.parseMaybeConditional (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9082:23)
+    at Parser.parseMaybeAssign (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9037:21)
+    at Parser.parseExprListItem (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:10327:18)
+    at Parser.parseCallExpressionArguments (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9440:22)
+    at Parser.parseSubscript (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9346:31)
+    at Parser.parseSubscripts (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9276:19)
+    at Parser.parseExprSubscripts (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9265:17)
+    at Parser.parseMaybeUnary (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9239:21)
+    at Parser.parseExprOps (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9109:23)
+    at Parser.parseMaybeConditional (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9082:23)
+    at Parser.parseMaybeAssign (C:\Users\interview\Rajesh\media\node_modules\@babel\parser\lib\index.js:9037:21)
+
+Completed 200 OK in 5684ms (Views: 5679.3ms | ActiveRecord: 1.4ms | Allocations: 24206)
+
+
+Started GET "/" for ::1 at 2020-02-01 15:06:48 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 10.4ms | Allocations: 2739)
+  Rendered shows/index.html.haml within layouts/application (Duration: 10.8ms | Allocations: 2821)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: 118b8512a431172fc61c
+Version: webpack 4.41.5
+Time: 3534ms
+Built at: 02/01/2020 3:06:54 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-41dc22a8bf81baa6afc6.js   2.53 MiB  application  [emitted] [immutable]  application
+js/application-41dc22a8bf81baa6afc6.js.map   2.69 MiB  application  [emitted] [dev]        application
+           js/show-385e4b4d96de34ae226e.js    307 KiB         show  [emitted] [immutable]  show
+       js/show-385e4b4d96de34ae226e.js.map    364 KiB         show  [emitted] [dev]        show
+                             manifest.json  654 bytes               [emitted]              
+Entrypoint application = js/application-41dc22a8bf81baa6afc6.js js/application-41dc22a8bf81baa6afc6.js.map
+Entrypoint show = js/show-385e4b4d96de34ae226e.js js/show-385e4b4d96de34ae226e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 859 bytes {application} [built]
+[./app/javascript/packs/show.js] 601 bytes {show} {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {show} [built]
+    + 10 hidden modules
+
+Completed 200 OK in 5706ms (Views: 5704.4ms | ActiveRecord: 0.8ms | Allocations: 7773)
+
+
+Started PUT "/shows/2" for ::1 at 2020-02-01 15:06:56 +0530
+Processing by ShowsController#update as */*
+  Parameters: {"is_fav"=>"false", "id"=>"2"}
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` WHERE `shows`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:17:in `update'
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.4ms | Allocations: 1360)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: show):
+  
+app/controllers/shows_controller.rb:26:in `show_params'
+app/controllers/shows_controller.rb:18:in `update'
+Started GET "/" for ::1 at 2020-02-01 15:08:30 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 5.6ms | Allocations: 2737)
+  Rendered shows/index.html.haml within layouts/application (Duration: 6.0ms | Allocations: 2819)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: 8837629b09cc741ccc37
+Version: webpack 4.41.5
+Time: 3551ms
+Built at: 02/01/2020 3:08:35 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-172b81574cd81b3398a0.js   2.53 MiB  application  [emitted] [immutable]  application
+js/application-172b81574cd81b3398a0.js.map   2.69 MiB  application  [emitted] [dev]        application
+           js/show-d2479cc54a4af19003c1.js    308 KiB         show  [emitted] [immutable]  show
+       js/show-d2479cc54a4af19003c1.js.map    364 KiB         show  [emitted] [dev]        show
+                             manifest.json  654 bytes               [emitted]              
+Entrypoint application = js/application-172b81574cd81b3398a0.js js/application-172b81574cd81b3398a0.js.map
+Entrypoint show = js/show-d2479cc54a4af19003c1.js js/show-d2479cc54a4af19003c1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 859 bytes {application} [built]
+[./app/javascript/packs/show.js] 614 bytes {show} {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {show} [built]
+    + 10 hidden modules
+
+Completed 200 OK in 5685ms (Views: 5683.1ms | ActiveRecord: 0.9ms | Allocations: 7780)
+
+
+Started GET "/" for ::1 at 2020-02-01 15:08:53 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 5.4ms | Allocations: 2738)
+  Rendered shows/index.html.haml within layouts/application (Duration: 5.8ms | Allocations: 2820)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: cbb6c0f56a3f5cc66f04
+Version: webpack 4.41.5
+Time: 3598ms
+Built at: 02/01/2020 3:08:59 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b604e5a41af31e9c1774.js   2.53 MiB  application  [emitted] [immutable]  application
+js/application-b604e5a41af31e9c1774.js.map   2.69 MiB  application  [emitted] [dev]        application
+           js/show-f3f3a785f05d8b61621e.js    308 KiB         show  [emitted] [immutable]  show
+       js/show-f3f3a785f05d8b61621e.js.map    364 KiB         show  [emitted] [dev]        show
+                             manifest.json  654 bytes               [emitted]              
+Entrypoint application = js/application-b604e5a41af31e9c1774.js js/application-b604e5a41af31e9c1774.js.map
+Entrypoint show = js/show-f3f3a785f05d8b61621e.js js/show-f3f3a785f05d8b61621e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 859 bytes {application} [built]
+[./app/javascript/packs/show.js] 616 bytes {show} {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {show} [built]
+    + 10 hidden modules
+
+Completed 200 OK in 5749ms (Views: 5747.5ms | ActiveRecord: 0.9ms | Allocations: 7787)
+
+
+Started PATCH "/shows" for ::1 at 2020-02-01 15:09:03 +0530
+  
+ActionController::RoutingError (No route matches [PATCH] "/shows"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-02-01 15:10:39 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.7ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 6.6ms | Allocations: 2737)
+  Rendered shows/index.html.haml within layouts/application (Duration: 7.0ms | Allocations: 2819)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: a859635395571c5aa7a2
+Version: webpack 4.41.5
+Time: 3450ms
+Built at: 02/01/2020 3:10:45 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b2cc44e91e1b0477d376.js   2.53 MiB  application  [emitted] [immutable]  application
+js/application-b2cc44e91e1b0477d376.js.map   2.69 MiB  application  [emitted] [dev]        application
+           js/show-4558a8681bdec4756a2a.js    308 KiB         show  [emitted] [immutable]  show
+       js/show-4558a8681bdec4756a2a.js.map    364 KiB         show  [emitted] [dev]        show
+                             manifest.json  654 bytes               [emitted]              
+Entrypoint application = js/application-b2cc44e91e1b0477d376.js js/application-b2cc44e91e1b0477d376.js.map
+Entrypoint show = js/show-4558a8681bdec4756a2a.js js/show-4558a8681bdec4756a2a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 859 bytes {application} [built]
+[./app/javascript/packs/show.js] 626 bytes {show} {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {show} [built]
+    + 10 hidden modules
+
+Completed 200 OK in 5515ms (Views: 5512.6ms | ActiveRecord: 1.2ms | Allocations: 7779)
+
+
+Started PATCH "/shows/2" for ::1 at 2020-02-01 15:10:47 +0530
+Processing by ShowsController#update as JSON
+  Parameters: {"is_fav"=>"false", "id"=>"2"}
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` WHERE `shows`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:17:in `update'
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.4ms | Allocations: 1214)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: show):
+  
+app/controllers/shows_controller.rb:26:in `show_params'
+app/controllers/shows_controller.rb:18:in `update'
+Started PATCH "/shows/2" for ::1 at 2020-02-01 15:11:26 +0530
+Processing by ShowsController#update as JSON
+  Parameters: {"is_fav"=>"false", "id"=>"2"}
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` WHERE `shows`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:18:in `update'
+Completed 400 Bad Request in 17ms (ActiveRecord: 4.1ms | Allocations: 6820)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: show):
+  
+app/controllers/shows_controller.rb:27:in `show_params'
+app/controllers/shows_controller.rb:19:in `update'
+Started GET "/" for ::1 at 2020-02-01 15:11:59 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 19.4ms | Allocations: 11410)
+  Rendered shows/index.html.haml within layouts/application (Duration: 19.8ms | Allocations: 11492)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 45.0ms | ActiveRecord: 5.2ms | Allocations: 14991)
+
+
+Started PATCH "/shows/2" for ::1 at 2020-02-01 15:12:01 +0530
+Processing by ShowsController#update as JSON
+  Parameters: {"is_fav"=>"false", "id"=>"2"}
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` WHERE `shows`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:18:in `update'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at C:/Users/interview/Rajesh/media/app/controllers/shows_controller.rb:19)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms | Allocations: 1574)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/shows_controller.rb:19:in `update'
+Started GET "/" for ::1 at 2020-02-01 15:14:42 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 19.6ms | Allocations: 11428)
+  Rendered shows/index.html.haml within layouts/application (Duration: 20.0ms | Allocations: 11510)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 43.7ms | ActiveRecord: 6.1ms | Allocations: 15030)
+
+
+Started PATCH "/shows/2" for ::1 at 2020-02-01 15:14:43 +0530
+Processing by ShowsController#update as JSON
+  Parameters: {"is_fav"=>"false", "id"=>"2"}
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` WHERE `shows`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:18:in `update'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at C:/Users/interview/Rajesh/media/app/controllers/shows_controller.rb:19)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 1536)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument, String passed.):
+  
+app/controllers/shows_controller.rb:19:in `update'
+Started GET "/" for ::1 at 2020-02-01 15:15:05 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 31.0ms | Allocations: 11462)
+  Rendered shows/index.html.haml within layouts/application (Duration: 31.4ms | Allocations: 11544)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 55.4ms | ActiveRecord: 6.0ms | Allocations: 15062)
+
+
+Started PATCH "/shows/2" for ::1 at 2020-02-01 15:15:07 +0530
+Processing by ShowsController#update as JSON
+  Parameters: {"is_fav"=>"false", "id"=>"2"}
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` WHERE `shows`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:18:in `update'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at C:/Users/interview/Rajesh/media/app/controllers/shows_controller.rb:19)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+  [1m[36mShow Update (21.4ms)[0m  [1m[33mUPDATE `shows` SET `shows`.`is_fav` = FALSE, `shows`.`updated_at` = '2020-02-01 09:45:07.791347' WHERE `shows`.`id` = 2[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+  [1m[35m (38.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 61.1ms | Allocations: 5777)
+
+
+  
+NoMethodError (undefined method `is_fav' for nil:NilClass):
+  
+app/controllers/shows_controller.rb:20:in `update'
+Started GET "/" for ::1 at 2020-02-01 15:16:21 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 27.6ms | Allocations: 11432)
+  Rendered shows/index.html.haml within layouts/application (Duration: 28.0ms | Allocations: 11514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 67.6ms | ActiveRecord: 5.4ms | Allocations: 15034)
+
+
+Started PATCH "/shows/2" for ::1 at 2020-02-01 15:16:25 +0530
+Processing by ShowsController#update as JSON
+  Parameters: {"is_fav"=>"false", "id"=>"2"}
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` WHERE `shows`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:18:in `update'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at C:/Users/interview/Rajesh/media/app/controllers/shows_controller.rb:19)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 4076)
+
+
+Started PATCH "/shows/2" for ::1 at 2020-02-01 15:16:25 +0530
+Processing by ShowsController#update as JSON
+  Parameters: {"is_fav"=>"false", "id"=>"2"}
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` WHERE `shows`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:18:in `update'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at C:/Users/interview/Rajesh/media/app/controllers/shows_controller.rb:19)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 3755)
+
+
+Started PATCH "/shows/2" for ::1 at 2020-02-01 15:16:31 +0530
+Processing by ShowsController#update as JSON
+  Parameters: {"is_fav"=>"false", "id"=>"2"}
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` WHERE `shows`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:18:in `update'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at C:/Users/interview/Rajesh/media/app/controllers/shows_controller.rb:19)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 3755)
+
+
+Started GET "/" for ::1 at 2020-02-01 15:16:59 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 5.4ms | Allocations: 2738)
+  Rendered shows/index.html.haml within layouts/application (Duration: 5.7ms | Allocations: 2820)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.9ms | Allocations: 5643)
+
+
+Started PATCH "/shows/2" for ::1 at 2020-02-01 15:17:01 +0530
+Processing by ShowsController#update as JSON
+  Parameters: {"is_fav"=>"false", "id"=>"2"}
+  [1m[36mShow Load (0.5ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` WHERE `shows`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:18:in `update'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at C:/Users/interview/Rajesh/media/app/controllers/shows_controller.rb:19)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shows_controller.rb:19:in `update'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 3743)
+
+
+Started GET "/" for ::1 at 2020-02-01 15:17:40 +0530
+Processing by ShowsController#index as HTML
+  Rendering shows/index.html.haml within layouts/application
+  [1m[36mShow Load (0.6ms)[0m  [1m[34mSELECT `shows`.* FROM `shows`[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` IN (4, 1, 3, 2, 5)[0m
+  ↳ app/views/shows/_shows.html.haml:12:in `each_with_index'
+  Rendered shows/_shows.html.haml (Duration: 22.6ms | Allocations: 11377)
+  Rendered shows/index.html.haml within layouts/application (Duration: 23.1ms | Allocations: 11459)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/interview/Rajesh/media/public/packs
+[Webpacker] Hash: a859635395571c5aa7a2
+Version: webpack 4.41.5
+Time: 3637ms
+Built at: 02/01/2020 3:17:46 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b2cc44e91e1b0477d376.js   2.53 MiB  application  [emitted] [immutable]  application
+js/application-b2cc44e91e1b0477d376.js.map   2.69 MiB  application  [emitted] [dev]        application
+           js/show-4558a8681bdec4756a2a.js    308 KiB         show  [emitted] [immutable]  show
+       js/show-4558a8681bdec4756a2a.js.map    364 KiB         show  [emitted] [dev]        show
+                             manifest.json  654 bytes               [emitted]              
+Entrypoint application = js/application-b2cc44e91e1b0477d376.js js/application-b2cc44e91e1b0477d376.js.map
+Entrypoint show = js/show-4558a8681bdec4756a2a.js js/show-4558a8681bdec4756a2a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 859 bytes {application} [built]
+[./app/javascript/packs/show.js] 626 bytes {show} {application} [built]
+[./app/javascript/stylesheets/application.scss] 706 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 951 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {show} [built]
+    + 10 hidden modules
+
+Completed 200 OK in 5829ms (Views: 5820.5ms | ActiveRecord: 5.6ms | Allocations: 17116)
+
+
+Started PATCH "/shows/2" for ::1 at 2020-02-01 15:17:47 +0530
+Processing by ShowsController#update as JSON
+  Parameters: {"is_fav"=>"false", "id"=>"2"}
+  [1m[36mShow Load (0.4ms)[0m  [1m[34mSELECT `shows`.* FROM `shows` WHERE `shows`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:17:in `update'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at C:/Users/interview/Rajesh/media/app/controllers/shows_controller.rb:18)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shows_controller.rb:18:in `update'
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT `channels`.* FROM `channels` WHERE `channels`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/shows_controller.rb:18:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shows_controller.rb:18:in `update'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 4082)
+
+

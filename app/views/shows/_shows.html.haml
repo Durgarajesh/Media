@@ -1,0 +1,27 @@
+%table.table.table-striped.table-bordered#show_table
+    %thead
+        %tr
+            %th
+                S.No
+
+            %th
+                Show Name
+            %th
+                Actions
+    %tbody
+        - @shows.each_with_index do |show, index|
+            %tr
+                %td
+                    = index+1
+                %td
+                    = show.name
+                    %br
+                    %span.badge.badge-primary
+                        = show.channel.name
+                    %span.badge.badge-info
+                        = get_time_range(show)
+                %td
+                    #favourite
+                        = hidden_field_tag 'show_id', show.id 
+                        = hidden_field_tag 'is_fav', false
+                        %i.fas.fa-heart
